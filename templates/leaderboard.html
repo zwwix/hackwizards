@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block main %}
+<h1 style="font-family: 'Azeret Mono'; color: azure">Leaderboard</h1>
+<div>
+    <table style="font-family: 'space mono'; color: azure; font-size: 25px" class="table">
+        <thead>
+            <tr>
+                <th scope="col">handle</th>
+                <th scope="col">hacktime</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in leaderboard %}
+            <tr>
+                <td scope="row">{{ user.username }}</td>
+                <td>{{ user.time }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

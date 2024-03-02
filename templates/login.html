@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <style>
+        .custom-input,
+        .custom-input:focus {
+            background-color: rgb(0, 0, 0, 0.2);
+            color: azure;
+        }
+
+        .custom-input::placeholder {
+            color: rgba(240, 255, 255, 0.6);
+        }
+
+        .custom-span {
+            background-color: rgb(0, 0, 0, 0.45);
+            color: azure;
+        }
+    </style>
+    <p style="color: turquoise; font-family: 'Azeret Mono';">{{ info }}</p>
+    <form action="/login" method="post" style="font-family: 'Azeret Mono';">
+        <div class="mb-3">
+            <div class="input-group">
+                <span class="input-group-text custom-span">@</span>
+                <input autocomplete="off" autofocus class="form-control custom-input" name="username" placeholder="username" type="text">
+            </div>
+        </div>
+        <div class="mb-3">
+            <input class="form-control custom-input" name="password" placeholder="password" type="password">
+        </div>
+        <button type="submit" class="form-control btn btn-outline-light">login</button>
+    </form>
+{% endblock %}

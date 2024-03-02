@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <style>
+        .custom-input,
+        .custom-input:focus {
+            background-color: rgb(0, 0, 0, 0.2);
+            color: azure;
+        }
+
+        .custom-label {
+            color: azure;
+        }
+
+        .custom-span {
+            background-color: rgb(0, 0, 0, 0.45);
+            color: azure;
+        }
+    </style>
+    <form action="/settings" method="post" style="font-family: 'Azeret Mono';">
+        <div class="mb-3">
+            <label class="custom-label form-label">#hack time</label>
+            <div class="input-group">
+                <input type="number" class="form-control custom-input" min="1" step="1" value={{ ftime }} name="ftime">
+                <span class="input-group-text custom-span">min</span>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="custom-label form-label">#slack time</label>
+            <div class="input-group">
+                <input type="number" class="form-control custom-input" min="1" step="1" value={{ ctime }} name="ctime">
+                <span class="input-group-text custom-span">min</span>
+            </div>
+        </div>
+        <button type="submit" class="form-control btn btn-outline-light">save</button>
+    </form>
+{% endblock %}
