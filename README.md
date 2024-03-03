@@ -2,10 +2,13 @@
 
 Welcome to hack-slack™, a productivity tool to help you manage your work and break time effectively!
 ![image](https://github.com/zwwix/hackwizards/assets/161281880/4099687a-f235-4b8f-abce-a03d137927e0)
+## hack-slack is live!
+
+hack-slack is live and ready to use! Check it out here -> https://hack-slack.onrender.com
 
 ## Description
 
-hack-slack™ is a web application built with Flask, designed to assist users in maintaining focus during work sessions and taking adequate breaks. The application utilizes the Pomodoro Technique, alternating between focused work periods ("#hack") and short breaks ("#slack").
+hack-slack is a web application built with Flask, designed to assist users in maintaining focus during work sessions and taking adequate breaks. The application utilizes the Pomodoro Technique, alternating between focused work periods ("#hack") and short breaks ("#slack").
 
 ## Features
 
@@ -42,4 +45,4 @@ flask run
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to hack-slack™, please fork the repository and create a pull request with your proposed changes.
+Contributions are welcome! If you'd like to contribute to hack-slack, please fork the repository and create a pull request with your proposed changes.
